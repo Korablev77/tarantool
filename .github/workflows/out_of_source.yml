@@ -64,4 +64,4 @@ jobs:
         with:
           name: out_of_source
           retention-days: 21
-          path: artifacts
+          path: ${{ env.VARDIR }}/artifacts
