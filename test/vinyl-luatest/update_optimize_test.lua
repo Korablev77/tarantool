@@ -51,7 +51,7 @@ g.test_optimize_one_index = function()
         box.snapshot()
 
         local new_stmt_count = _G.dump_stmt_count({'primary', 'secondary'})
-        t.assert_equals(new_stmt_count - old_stmt_count, 8)
+        t.assert_equals(new_stmt_count - old_stmt_count, 100)
 
         -- Not optimized updates.
 
