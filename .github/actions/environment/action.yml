@@ -82,5 +82,5 @@ runs:
         fi
         # Found that actions/checkout does not remove all temporary
         # files from previous runs, to avoid of it need to run:
-        git submodule foreach --recursive 'git clean -xffd'
+        git clean -xffd; git submodule foreach --recursive 'git clean -xffd'
       shell: bash
