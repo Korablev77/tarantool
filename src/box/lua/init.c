@@ -89,6 +89,9 @@ extern char session_lua[],
 #if ENABLE_AUDIT_LOG
 	audit_lua[],
 #endif
+#if ENABLE_FLIGHT_RECORDER
+	flightrec_lua[],
+#endif
 	net_box_lua[],
 	upgrade_lua[],
 	console_lua[],
@@ -108,6 +111,9 @@ static const char *lua_sources[] = {
 #endif
 #if ENABLE_AUDIT_LOG
 	"box/audit", audit_lua,
+#endif
+#if ENABLE_FLIGHT_RECORDER
+	"box/flightrec", flightrec_lua,
 #endif
 	"box/upgrade", upgrade_lua,
 	"box/net_box", net_box_lua,
