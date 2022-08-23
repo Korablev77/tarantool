@@ -260,6 +260,10 @@ log_set_format(struct log *log, log_format_func_t format_func);
 void
 say_set_log_level(int new_level);
 
+/** Set log level for the on_log callback. */
+void
+say_set_on_log_level(int new_level);
+
 /**
  * Set log format for default logger. Can be used dynamically.
  *

@@ -481,6 +481,7 @@ load_cfg(void)
 			       cfg_geti("flightrec_requests_size"),
 			       cfg_geti("flightrec_requests_max_req_size"),
 			       cfg_geti("flightrec_requests_max_res_size"));
+		say_set_on_log_level(flightrec_log_level());
 	}
 
 	memtx_tx_manager_use_mvcc_engine = cfg_getb("memtx_use_mvcc_engine");
